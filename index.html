@@ -1,19 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hockey</title>
     <!-- tailwind css -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind js -->
-     <link rel="stylesheet" href="tailwind.config.js">
-</head>
-<body>
-    <header>
-        <nav>
-            
-        </nav>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "button-color": "#FF4240",
+              "description-color": "rgba(19,19,24,0.6)",
+              "rgba-color": "rgba(19,19,24,0.5)",
+              
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .manrope {
+        font-family: "Manrope", serif;
+      }
+    </style>
+  </head>
+
+  <body class="manrope">
+    <header class="md:container mx-auto">
+      <nav class="flex justify-around items-center py-12">
+        <h1 class="font-extrabold text-4xl">
+          Hockey<span class="text-[#FF4240]">’</span>s
+        </h1>
+        <ul class="md:flex hidden">
+          <li class="pr-10">
+            <a class="text-[#FF4240] font-bold" href="">Home</a>
+          </li>
+          <li class="pr-10"><a class="text-[#424247]" href="">About</a></li>
+          <li class="pr-10"><a class="text-[#424247]" href="">Pages</a></li>
+          <li class="pr-10"><a class="text-[#424247]" href="">Blog</a></li>
+          <li class="pr-10"><a class="text-[#424247]" href="">Contact</a></li>
+        </ul>
+        <div class="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6 mr-6 hidden md:block"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <button
+            class="bg-[#FF4240] text-[white] py-4 px-6 rounded-lg font-bold text-xl"
+          >
+            Get Ticket
+          </button>
+        </div>
+      </nav>
+      <div class="md:block">
+        <img src="Images/1.png" alt="" class="mx-auto pb-4" />
+        <div class="">
+          <div
+            class="lg:bg-black max-w-lg text-white p-8 rounded-2xl relative -top-52 left-2/4 hidden lg:block"
+          >
+            <h1 class="pb-4 text-2xl font-extrabold">
+              Meet all the heroes from the field
+            </h1>
+            <p class="opacity-60 max-w-lg">
+              Meet the heroes from the field, where courage and passion unite.
+              Their dedication shapes the game, inspiring generations to come.
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
-</body>
+    <main class="md:container mx-auto">
+      <!-- Proffesional HOckey -->
+       <section>
+        <h1 class="pb-5 text-4xl font-extrabold text-center">Professional Hockeys Club</h1>
+        <p class="max-w-5xl text-description-color text-center mx-auto pb-20">A professional hockey club is a competitive team that participates in high-level hockey leagues, featuring skilled players, coaches, and staff. These clubs focus on performance, training, and fan engagement while competing for championships.</p>
+        <div class="flex flex-col lg:flex-row justify-around ">
+          <div class="left pb-10">
+            <div class=" mx-auto  items-center flex radial-progress text-pink-800" style="--value:80;" role="progressbar">80%</div>
+            <h2 class="text-xl font-semibold pt-6 pb-4 text-center ">Player Facility</h2>
+            <p class="text-description-color w-64 text-center mx-auto">A prayer facility is a designated space for individuals to reflection.</p>
+          </div>
+          <div class="pb-10">
+            <div class="radial-progress text-purple-900imary flex items-center mx-auto " style="--value:87;" role="progressbar">87%</div>
+            <h2 class="text-xl font-semibold pt-6 pb-4 text-center ">Experienced Coach</h2>
+            <p class=" mx-auto text-description-color w-64 text-center ">An experienced coach provides expert  strategy, and mentorship to help athletes performance.</p>
+          </div>
+          <div class="pb-10">
+            <div class="  radial-progress mx-auto flex items-center text-pink-600" style="--value:90;" role="progressbar">90%</div>
+            <h2 class="text-xl font-semibold pt-6 pb-4 text-center ">Senior Player</h2>
+            <p class="text-description-color w-64 text-center mx-auto ">A senior player is an experienced athlete who has played at a high level providing leadership .</p>
+          </div>
+          <div class="pb-10">
+            <div class="  mx-auto flex items-center radial-progress text-purple-600" style="--value:95;" role="progressbar">95%</div>
+            <h2 class="text-xl font-semibold pt-6 pb-4 text-center ">Training Ground</h2>
+            <p class="text-description-color w-64 text-center mx-auto ">A training ground is a dedicated facility  develop skills, and prepare for competitions.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Progream section -->
+      <section class=" py-28">
+        <h1 class="text-[#131318] pb-6 text-center text-4xl font-extrabold">
+          Program Sections
+        </h1>
+        <p class="font-medium text-center max-w-xl mx-auto pb-20">
+          CSS defines the visual presentation of the page. It ensures consistent
+          layout and design across devices.
+        </p>
+        <div class="text-white flex flex-col lg:flex-row justify-evenly  gap-1  ">
+          <div class="rounded-2xl h-72 max-w-xl md:w-[573px] mb-5 mx-auto " style=" 
+            background: linear-gradient(rgba(17, 17, 17, 0.527), rgba(17, 17, 17, 0.5)), 
+            url('Images/2.png');
+            background-repeat: no-repeat;
+            ">
+           <div class="pl-9 pt-12">
+            <h1 class="font-extrabold text-3xl">Junior Program</h1>            
+            <p class="font-medium max-w-lg leading-6 pt-4">A junior program provides young athletes with training, development, and competition opportunities to enhance their skills in a structured environment.</p>
+            <button class="py-3 px-6 bg-button-color font-bold text-xl rounded-lg mt-6">Register Now!</button>
+           </div>
+          </div>
+          <div class="rounded-2xl h-72 max-w-xl md:w-[573px] mx-auto " style=" 
+            background: linear-gradient(rgba(17, 17, 17, 0.527), rgba(17, 17, 17, 0.5)), 
+            url('Images/3.png');
+            background-repeat: no-repeat;
+            ">
+           <div class="pl-9 pt-12">
+            <h1 class="font-extrabold text-3xl">Teenager Program</h1>            
+            <p class="font-medium max-w-lg leading-6 pt-4">A teenager program is an initiative designed to engage young people in activities that promote personal growth, skill development, and social connection.</p>
+            <button class="py-3 px-6 bg-button-color font-bold text-xl rounded-lg mt-6">Register Now!</button>
+           </div>
+          </div>
+        </div>
+        <div class=" flex justify-center text-white pt-10">
+          <div class="rounded-2xl md:h-[450px]  md:w-[1170px] " style=" 
+            background: linear-gradient(rgba(17, 17, 17, 0.527), rgba(17, 17, 17, 0.5)), 
+            url('Images/4.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            ">
+           <div class="pl-9 pt-12">
+            <h1 class="font-extrabold text-3xl">Professional Program</h1>            
+            <p class="font-medium max-w-lg leading-6 pt-4">A professional program is a structured course or training designed to equip individuals with specialized skills preparing them for advanced careers or certifications.</p>
+            <button class="py-3 px-6 bg-button-color font-bold text-xl rounded-lg mt-6">Register Now!</button>
+           </div>
+          </div>
+        </div>
+        </section>
+        <!-- main product -->
+         <section>
+          <h1 class="text-4xl font-extrabold text-center pb-6">Our New Products</h1>
+          <p class="text-center pb-20 max-w-screen-lg mx-auto">Could you clarify a bit more about what you're referring to? Are you asking for a description or promotional content for new products, and is there a specific industry or type of product you'd like to focus on?</p>
+          <div class="flex flex-col lg:flex-row justify-evenly flex-wrap">
+            <!-- 1 -->
+            <div class=" mb-2">
+              <div class=" lg:w-[573px]  border rounded-2xl  flex ">
+                <div class="c-left">
+                  <figure>
+                    <img class="p-5 rounded-xl h-56 w-56" 
+                      src="Images/5.png"
+                      alt="Movie" />
+                  </figure>
+                </div>
+               <div class="c-right pt-5">
+                  <div class="rating rating-sm ">
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked="checked" />
+                      <p class="ps-1 pr-5 text-rgba-color">5.0</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      </svg><p class="ps-1 pr-5 text-rgba-color">20</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                      </svg>
+                      <p class="ps-1 pr-5 text-rgba-color">200</p>                      
+                      
+                  </div>
+                  
+                  <h2 class="  card-title py-3 font-extrabold text-xl">World Cup Flags Football</h2>
+                  <p class="desrcription-color pb-2">The World Cup Flags Football tournament celebrates global unity and competition.</p>
+                  <div class="flex">
+                    <p class="text-button-color font-extrabold text-lg pr-5">Price - $22.00</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color pr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg> <p class="text-rgba-color pb-6">Delivery Fee : Free</p>
+                  </div>
+                </div>
+               </div>
+            </div>
+            <!-- 2 -->
+            <div class=" mb-2 ">
+              <div class=" lg:w-[573px] w-auto  border rounded-2xl  flex ">
+                <div class="c-left">
+                  <figure>
+                    <img class="p-5 rounded-xl h-56 w-56" 
+                      src="Images/6.png"
+                      alt="Movie" />
+                  </figure>
+                </div>
+               <div class="c-right pt-5">
+                  <div class="rating rating-sm ">
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked="checked" />
+                      <p class="ps-1 pr-5 text-rgba-color">5.0</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      </svg><p class="ps-1 pr-5 text-rgba-color">10</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                      </svg>
+                      <p class="ps-1 pr-5 text-rgba-color">220</p>                      
+                      
+                  </div>
+                  
+                  <h2 class="  card-title py-3 font-extrabold text-xl">Which country won the 2018 FIFA World Cup?</h2>
+                  <p class="desrcription-color pb-2">France won the 2018 FIFA World Cup.</p>
+                  <div class="flex">
+                    <p class="text-button-color font-extrabold text-lg pr-5">Price - $12.00</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color pr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg> <p class="text-rgba-color pb-6">Delivery Fee : Free</p>
+                  </div>
+                </div>
+               </div>
+            </div>
+            <!-- 3 -->
+            <div class=" mb-2 ">
+              <div class=" lg:w-[573px] w-auto  border rounded-2xl  flex ">
+                <div class="c-left">
+                  <figure>
+                    <img class="p-5 rounded-xl h-56 w-56" 
+                      src="Images/7.png"
+                      alt="Movie" />
+                  </figure>
+                </div>
+               <div class="c-right pt-5">
+                  <div class="rating rating-sm ">
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked="checked" />
+                      <p class="ps-1 pr-5 text-rgba-color">5.0</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      </svg><p class="ps-1 pr-5 text-rgba-color">13</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                      </svg>
+                      <p class="ps-1 pr-5 text-rgba-color">130</p>                      
+                      
+                  </div>
+                  
+                  <h2 class="  card-title py-3 font-extrabold text-xl">Who is known as the "Father of Cricket"?</h2>
+                  <p class="desrcription-color pb-2">William Gilbert Grace, an English cricketer, is known as the "Father of Cricket" due to his contributions to the game's development.</p>
+                  <div class="flex">
+                    <p class="text-button-color font-extrabold text-lg pr-5">Price - $12.00</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color pr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg> <p class="text-rgba-color pb-6">Delivery Fee : Available</p>
+                  </div>
+                </div>
+               </div>
+            </div>
+            <!-- 4 -->
+            <div class=" mb-2 ">
+              <div class=" lg:w-[573px] w-auto  border rounded-2xl  flex ">
+                <div class="c-left">
+                  <figure>
+                    <img class="p-5 rounded-xl h-56 w-56" 
+                      src="Images/8.png"
+                      alt="Movie" />
+                  </figure>
+                </div>
+               <div class="c-right pt-5">
+                  <div class="rating rating-sm ">
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked="checked" />
+                      <p class="ps-1 pr-5 text-rgba-color">5.0</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      </svg><p class="ps-1 pr-5 text-rgba-color">53</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                      </svg>
+                      <p class="ps-1 pr-5 text-rgba-color">230</p>                      
+                      
+                  </div>
+                  
+                  <h2 class="  card-title py-3 font-extrabold text-xl">What is the most expensive sports jersey ever sold?
+                  </h2>
+                  <p class="desrcription-color pb-2">The most expensive sports jersey   which sold for $10.1 million in 2022.</p>
+                  <div class="flex">
+                    <p class="text-button-color font-extrabold text-lg pr-5">Price - $42.00</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color pr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg> <p class="text-rgba-color pb-6">Delivery Fee : Free</p>
+                  </div>
+                </div>
+               </div>
+            </div>
+            <!-- 5 -->
+            <div class=" mb-2 ">
+              <div class=" lg:w-[573px] w-auto  border rounded-2xl  flex ">
+                <div class="c-left">
+                  <figure>
+                    <img class="p-5 rounded-xl h-56 w-56" 
+                      src="Images/9.png"
+                      alt="Movie" />
+                  </figure>
+                </div>
+               <div class="c-right pt-5">
+                  <div class="rating rating-sm ">
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked="checked" />
+                      <p class="ps-1 pr-5 text-rgba-color">5.0</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      </svg><p class="ps-1 pr-5 text-rgba-color">63</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                      </svg>
+                      <p class="ps-1 pr-5 text-rgba-color">530</p>                      
+                      
+                  </div>
+                  
+                  <h2 class="  card-title py-3 font-extrabold text-xl"> Why do cricketers wear helmets during matches?
+                  </h2>
+                  <p class="desrcription-color pb-2"> Cricketers wear helmets to protect themselves from head injuries that could cause serious harm.</p>
+                  <div class="flex">
+                    <p class="text-button-color font-extrabold text-lg pr-5">Price - $52.00</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color pr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg> <p class="text-rgba-color pb-6">Delivery Fee : Free</p>
+                  </div>
+                </div>
+               </div>
+            </div>
+            <!-- 6 -->
+            <div class=" mb-2 ">
+              <div class=" lg:w-[573px] w-auto  border rounded-2xl  flex ">
+                <div class="c-left">
+                  <figure>
+                    <img class="p-5 rounded-xl h-56 w-56" 
+                      src="Images/10.png"
+                      alt="Movie" />
+                  </figure>
+                </div>
+               <div class="c-right pt-5">
+                  <div class="rating rating-sm ">
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked="checked" />
+                      <p class="ps-1 pr-5 text-rgba-color">5.0</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      </svg><p class="ps-1 pr-5 text-rgba-color">23</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                      </svg>
+                      <p class="ps-1 pr-5 text-rgba-color">330</p>                      
+                      
+                  </div>
+                  
+                  <h2 class="  card-title py-3 font-extrabold text-xl"> Who holds the record for the most goals in a single World Cup tournament?
+                  </h2>
+                  <p class="desrcription-color pb-2"> Just Fontaine of France holds the record, with 13 goals in the 1958 World Cup.</p>
+                  <div class="flex">
+                    <p class="text-button-color font-extrabold text-lg pr-5">Price - $42.00</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-rgba-color pr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg> <p class="text-rgba-color pb-6">Delivery Fee : Available</p>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+         </section>
+         <!-- client question -->
+          <section class="py-28 
+          ">
+            <h1 class="font-extrabold text-center text-4xl">Clients Question</h1>
+            <p class="description-color pb-28 max-w-3xl text-center mx-auto pt-6">"You can enhance customer service by training staff to be more empathetic, providing multiple support channels, and promptly addressing customer feedback to create a more positive and responsive experience."</p>
+            <div class="flex flex-col lg:flex-row justify-between lg:border rounded-lg ">
+              <div class="left  ">
+                <img class="h-[431px] mx-auto" src="Images/11.png " alt="">
+              </div>
+              <div class="right flex-1  ">
+                <div class="join join-vertical w-full">
+                  <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl font-bold">Our Equipment</div>
+                    <div class="collapse-content text-description-color ">
+                      <p>Sports equipment is designed to enhance performance, ensure safety, and provide comfort during physical activities</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-bold">Private Lessons</div>
+                    <div class="collapse-content">
+                      <p class="text-description-color">Private lessons offer personalized instruction that helps students focus on specific areas of learning, providing tailored guidance to improve skills efficiently.</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-bold">Hockey Training</div>
+                    <div class="collapse-content">
+                      <p class="text-description-color"> Building endurance and stamina is crucial for hockey players to maintain energy throughout the game and perform at their best.</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-bold">Ski Touring</div>
+                    <div class="collapse-content">
+                      <p class="text-description-color">Ski touring is a type of backcountry skiing where skiers use specialized equipment, such as climbing skins and alpine touring bindings, to ascend slopes and then ski down untracked terrain.</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-bold">Booking</div>
+                    <div class="collapse-content">
+                      <p class="text-description-color">You can book a flight online by visiting an airline's website or using a travel agency platform, selecting your travel dates, choosing your destination, and completing the payment process.</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-bold">Pricings</div>
+                    <div class="collapse-content">
+                      <p class="text-description-color">A standard football jersey typically costs between $50 and $120, depending on the brand and team.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+  </body>
 </html>
